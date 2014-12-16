@@ -29,7 +29,7 @@ import javax.servlet.ServletRegistration;
 public class AppInitializer implements WebApplicationInitializer {
 
     private static final String CONFIG_LOCATION = "com.dixit.ceti.web.config";
-    private static final String MAPPING_URL = "/*";
+    private static final String MAPPING_URL = "/";
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {

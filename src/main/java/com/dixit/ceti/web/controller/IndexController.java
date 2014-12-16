@@ -15,11 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 class IndexController {
-
     @SuppressWarnings("SameReturnValue")
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    @ResponseBody
-    public String showIndex() {
+    @RequestMapping(value = "/core", method = RequestMethod.GET)
+    public @ResponseBody String showIndex() {
         return "Core Environment";
     }
 
